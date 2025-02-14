@@ -6,8 +6,8 @@
     "dev": "turbo dev --turbopack -p 3003",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "dev:didivu": "npm i && turbo run dev --filter=payload-starter...",
-    "build:didivu": "turbo run build --filter=payload-starter..."
+    "dev:starter": "npm i && turbo run dev --filter=payload-starter...",
+    "build:starter": "turbo run build --filter=payload-starter..."
   },
   "devDependencies": {
     "@didivu/eslint-config": "*",

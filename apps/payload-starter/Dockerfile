@@ -23,7 +23,7 @@ RUN npm install
  
 # Build the project
 COPY --from=builder /app/out/full/ .
-RUN npm run build:inker
+RUN npm run build:starter
  
 FROM base AS runner
 WORKDIR /app
