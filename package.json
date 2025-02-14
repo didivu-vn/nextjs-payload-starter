@@ -1,0 +1,39 @@
+{
+  "name": "didivu-payload-starter",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev --turbopack -p 3003",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "dev:didivu": "npm i && turbo run dev --filter=payload-starter...",
+    "build:didivu": "turbo run build --filter=payload-starter..."
+  },
+  "devDependencies": {
+    "@didivu/eslint-config": "*",
+    "@didivu/typescript-config": "*",
+    "@types/node": "^20.14.8",
+    "eslint": "^8.57.0",
+    "eslint-plugin-turbo": "^2.0.4",
+    "prettier": "^3.2.5",
+    "turbo": "^2.3.3",
+    "typescript": "5.5.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.2.3",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@next/eslint-plugin-next": "^14.2.3",
+    "@payloadcms/db-postgres": "^3.23.0",
+    "@payloadcms/next": "^3.23.0",
+    "@payloadcms/richtext-lexical": "^3.23.0",
+    "graphql": "^16.10.0",
+    "payload": "^3.23.0",
+    "sharp": "^0.33.5"
+  }
+}

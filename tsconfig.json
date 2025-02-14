@@ -1,0 +1,3 @@
+{
+  "extends": "@didivu/typescript-config/base.json"
+}
